@@ -1,0 +1,69 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+import java.math.BigInteger;
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+     
+         BigInteger data1 = new BigInteger("0");
+         BigInteger data2 = new BigInteger("0");
+      
+        BigInteger newlinklistdata;
+        BigInteger i1=new BigInteger("1");
+         BigInteger i2=new BigInteger("1");
+        
+        
+        
+    while(l1!=null )
+    {
+        data1=data1.add(i1.multiply(BigInteger.valueOf(l1.val)));
+         i1=i1.multiply(BigInteger.valueOf(10));
+        l1=l1.next;
+       
+        
+    }
+      System.out.println(data1);  
+       
+        while(l2!=null)
+        {
+         data2=data2.add(i2.multiply(BigInteger.valueOf(l2.val))); 
+           i2=i2.multiply(BigInteger.valueOf(10));
+             l2=l2.next;
+        }
+       
+        System.out.println(data2); 
+        data1=data1.add(data2);
+        System.out.println(data1);
+        
+        
+         ListNode  headnode=null;
+        ListNode pre=null;
+         ListNode finalhead=null;
+        
+    do{
+        
+        System.out.println(data1);
+        newlinklistdata=data1.remainder(BigInteger.valueOf(10));
+        System.out.println(newlinklistdata);
+        data1=data1.divide(BigInteger.valueOf(10));
+        headnode=new ListNode((int)newlinklistdata.intValue());
+        if(pre==null)
+            finalhead=headnode;
+        else
+       pre.next=headnode;
+        pre=headnode;
+        
+        
+        
+        
+    }while(data1.compareTo(BigInteger.valueOf(0))!= 0);
+        
+        return finalhead;
+        
+    }
+}

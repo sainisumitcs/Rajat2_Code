@@ -1,0 +1,1158 @@
+!SESSION 2019-05-24 13:26:04.602 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.dsl.product -product org.eclipse.epp.package.dsl.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.dsl.product -data C:\Users\rajat.singh\Desktop\newgit\ALL\LinkListproblem -product org.eclipse.epp.package.dsl.product
+
+!ENTRY org.eclipse.ui 2 0 2019-05-24 13:26:11.503
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-05-24 13:26:11.503
+!MESSAGE Commands should really have a category: plug-in='com.hpe.fortify.fod.core.stal', id='com.fortify.fod.eclipse.commands.connectionConfig', categoryId='com.fortify.fod.eclipse.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-05-24 13:26:12.434
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-05-24 13:26:12.434
+!MESSAGE Commands should really have a category: plug-in='com.hpe.fortify.fod.core.stal', id='com.fortify.fod.eclipse.commands.connectionConfig', categoryId='com.fortify.fod.eclipse.commands.category'
+
+!ENTRY org.eclipse.jface 2 0 2019-05-24 13:26:14.859
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-24 13:26:14.859
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@192f807,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@36cbe0fe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-24 13:26:14.859
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@712a5de4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@364c4ba9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-24 13:26:14.859
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2008dfa7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@492d0748,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-05-24 13:26:17.168
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-05-24 13:26:17.168
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.ui 4 4 2019-05-24 13:26:17.823
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.TaskList.
+
+!ENTRY org.eclipse.jface.text 2 0 2019-05-24 13:26:19.195
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-05-24 13:26:19.197
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-24 13:26:30.277
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rajat.singh'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-24 13:26:32.064
+!MESSAGE Server ‘com.genuitec.eclipse.aeri.server1’ failed with exception: Bad Gateway. ; version: 2.0.4.v20170307-1435
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:71)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:56)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:69)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.ui 4 120 2019-05-24 13:26:33.383
+!MESSAGE org.eclipse.debug.ui.toggleBreakpointsTargetFactory extension failed to load breakpoint toggle target because the specified id is already registered.  Specified ID is: org.chromium.debug.ui.ChromiumToggleBreakpointTargetFactory
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-05-24 13:40:33.586
+!MESSAGE Unknown Host: http://www.nodeclipse.org/updates/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: www.nodeclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2019-05-24 13:41:34.016
+!MESSAGE Unable to connect to repository http://m2eclipse.sonatype.org/update/content.xml
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:263)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-05-24 13:42:10.532
+!MESSAGE No repository found at http://www.eclipse.org/m2e/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-05-24 13:42:19.289
+!MESSAGE No repository found at http://download.eclipse.org/webtools/updates/neno.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-05-24 13:42:38.295
+!MESSAGE No repository found at jar:file:/C:/Users/rajat.singh/Desktop/VisualVM/visualvm_launcher_u3_eclipse.zip!/.
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:49:06.169
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:49:06.250
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:49:11.201
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:49:11.585
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:49:11.600
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.eclipse.jface.text 2 0 2019-05-24 13:49:45.387
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-05-24 13:49:45.389
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:49:46.156
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:49:46.179
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:49:47.244
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:49:47.247
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:50:21.143
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:50:21.148
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:50:33.536
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:50:33.539
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:15.165
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:28.112
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:28.120
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:45.272
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:45.278
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:48.397
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:48.404
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:51.526
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:51.529
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:55.686
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:51:55.691
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:52:39.395
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:52:39.398
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:53:03.307
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:53:03.310
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:53:15.722
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:14.451
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:14.454
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:14.634
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:14.637
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:14.890
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:14.895
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:15.037
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:15.041
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:15.223
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:15.224
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:15.436
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:15.440
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:15.563
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:15.566
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:15.912
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:15.914
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:55:16.321
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:16.395
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:16.396
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:16.423
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:16.424
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:16.453
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:16.455
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:16.483
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:16.484
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:16.512
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:16.513
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:17.248
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:17.249
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:17.382
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:17.384
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:17.658
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:17.660
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:20.321
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:20.325
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:20.711
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:20.715
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:20.887
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:20.889
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:21.124
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:21.128
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:21.337
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:21.341
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:22.128
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:22.131
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:22.270
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:22.273
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:22.421
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:22.423
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:22.714
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:22.717
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:22.914
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:22.916
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:23.074
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:23.075
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:23.660
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:23.664
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:23.709
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:23.712
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:23.903
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:23.906
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:24.270
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:24.273
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:24.789
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:24.791
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:25.036
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:25.038
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:25.633
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:25.636
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:25.725
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:25.729
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:25.890
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:25.893
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:26.231
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:26.232
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:26.532
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:26.533
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:26.683
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:26.685
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:27.635
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:27.638
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:27.877
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:27.880
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:28.203
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:28.205
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:28.392
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:28.395
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:28.836
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:28.837
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:29.653
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:29.656
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:29.705
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:29.707
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:30.017
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:30.020
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:30.367
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:30.370
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:30.600
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:30.604
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:30.833
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:30.835
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:31.643
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:55:31.646
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:55:49.794
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:55:49.810
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:56:03.923
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:56:03.931
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:56:28.107
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:56:28.119
+!MESSAGE org.eclipse.m2e.core.internal.embedder.EclipseLogger  - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:01.627
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:01.631
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:01.915
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:01.919
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:02.130
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:02.133
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:02.351
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:02.353
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:02.755
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:02.757
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:03.147
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:03.151
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:03.477
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:03.479
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:03.918
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:03.919
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:04.096
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:04.097
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:04.355
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:04.355
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:04.544
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:04.547
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:05.313
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:05.316
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:05.413
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:05.416
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:05.509
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:05.512
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:06.149
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:06.151
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:06.944
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:06.946
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:07.265
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:07.268
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:07.945
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:07.948
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:07.991
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:07.993
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:08.292
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:08.295
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:08.660
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:08.662
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:09.030
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:09.033
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:09.177
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:09.179
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:09.959
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:09.960
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:10.798
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:10.800
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:10.935
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:10.937
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:11.194
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:11.197
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:11.901
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:11.903
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:12.204
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:12.206
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:12.404
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:12.407
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:12.564
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:12.566
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:13.474
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:13.478
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:57:17.153
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:45.500
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:45.502
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:45.540
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:57:45.541
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:35.576
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:35.579
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:35.798
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:35.802
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:36.091
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:36.093
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:36.240
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:36.243
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:36.441
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:36.444
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:36.660
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:36.663
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:36.783
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:36.787
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:37.521
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:37.524
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:37.718
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:37.720
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:38.000
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:38.003
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:38.198
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:38.200
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:38.957
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:38.960
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:39.116
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:39.119
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:39.334
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:39.336
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:39.550
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:39.553
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:40.482
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:58:40.483
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:59:08.717
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:59:08.718
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:59:08.735
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:59:08.736
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:59:09.626
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:59:09.627
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:59:09.628
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:59:09.629
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:59:09.633
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2019-05-24 13:59:09.634
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 13:59:17.947
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:01:18.524
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:03:18.997
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:05:19.480
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:07:19.980
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:09:20.474
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:11:20.954
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:13:21.422
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:15:21.925
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:17:22.474
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:19:22.716
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:21:22.971
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:23:23.206
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:25:23.509
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:27:23.767
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:29:24.017
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:31:24.267
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:33:24.587
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:35:24.920
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:37:25.276
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:39:25.535
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:41:25.870
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:43:26.187
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:45:26.501
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:47:26.866
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:49:27.118
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:51:27.411
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:53:27.592
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:55:27.961
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:57:28.380
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 14:59:28.673
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:01:29.059
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:03:29.345
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:05:29.835
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:07:30.261
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:09:30.650
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:11:31.035
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:13:31.390
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:15:31.655
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:17:31.902
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:19:32.251
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:21:32.617
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:23:33.009
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:25:33.305
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:27:33.617
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:29:34.005
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:31:34.403
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:33:34.915
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:35:35.174
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:37:35.562
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:39:35.889
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
+
+!ENTRY org.apache.log4j 2 0 2019-05-24 15:41:36.258
+!MESSAGE org.eclipse.jgit.lib.Repository  - close() called when useCnt is already zero
+
