@@ -1,0 +1,9 @@
+package wait_notify;
+
+import java.util.Queue;
+
+public class Producer {
+	
+	Queue queue=null;
+
+}

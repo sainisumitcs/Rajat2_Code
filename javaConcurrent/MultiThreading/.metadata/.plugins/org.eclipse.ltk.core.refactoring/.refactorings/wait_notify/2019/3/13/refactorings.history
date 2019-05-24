@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;wait_notify.main&apos; to &apos;mainclass&apos;&#x0D;&#x0A;- Original project: &apos;wait_notify&apos;&#x0D;&#x0A;- Original element: &apos;wait_notify.main&apos;&#x0D;&#x0A;- Renamed element: &apos;wait_notify.mainclass&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;main&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;wait_notify{main.java[main" matchStrategy="1" name="mainclass" qualified="false" references="true" similarDeclarations="false" stamp="1553670059240" textual="false" version="1.0"/>
+</session>

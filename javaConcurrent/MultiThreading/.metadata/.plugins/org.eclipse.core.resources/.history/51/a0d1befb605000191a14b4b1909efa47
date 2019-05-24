@@ -1,0 +1,39 @@
+package wait_notify;
+
+import java.util.ArrayDeque;
+import java.util.Queue;
+
+public class mainclass {
+	
+	public static void main(String[] args) {
+		
+	Queue<Integer> queue=new ArrayDeque<Integer>();
+	
+	
+	Producer producer=new Producer(queue);
+	
+	Thread thread=new Thread(producer);
+	thread.start();
+	
+	Consumer consumer=new Consumer(queue);
+	
+	Thread thread1=new Thread(consumer);
+	thread1.start();
+	
+	consumer2 consumer2=new consumer2(queue);
+	
+	Thread thread2=new Thread(consumer);
+	thread2.start();
+	
+	
+	
+	
+	
+	
+	
+		
+	}
+	
+	
+
+}

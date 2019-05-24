@@ -1,0 +1,31 @@
+package wait_notify;
+
+import java.util.Queue;
+import java.util.Random;
+
+public class Consumer  implements  Runnable{
+	
+	
+	Queue<Integer> queue=null;
+	
+	public Consumer(Queue<Integer> queue) {
+		this.queue=queue;	
+		}
+	
+	@Override
+	public void run() throws InterruptedException {
+		
+		while(true)
+		{
+			synchronized (queue) {
+				queue.add(new Random().nextInt());
+				queue.notify();
+				queue.wait();
+				
+				
+			}
+		}
+ 
+
+}
+}

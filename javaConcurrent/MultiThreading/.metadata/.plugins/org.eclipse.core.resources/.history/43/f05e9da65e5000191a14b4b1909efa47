@@ -1,0 +1,15 @@
+package wait_notify;
+
+import java.util.Queue;
+
+public class Producer implements Runnable{
+	
+	Queue queue=null;
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

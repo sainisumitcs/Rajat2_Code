@@ -1,0 +1,19 @@
+package wait_notify;
+
+import java.util.Queue;
+
+public class Consumer  implements  Runnable{
+	
+	
+	Queue queue=null;
+	
+	@Override
+	public void run() {
+		
+		
+		
+		
+	}
+ 
+
+}
