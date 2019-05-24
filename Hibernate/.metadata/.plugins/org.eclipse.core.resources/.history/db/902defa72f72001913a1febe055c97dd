@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="ALL" monitorInterval="30">
+
+    <Properties>
+           <Property name="EvmLoggingPath">/home/loanteam/TESTSETUP/CLARO_BRAZIL/Eligibility/EVM/log</Property>
+           <Property name="EDRLoggingPath">/home/loanteam/TESTSETUP/CLARO_BRAZIL/Eligibility/EVM/log/EDRLogs</Property>
+           <Property name="BitstatLoggingPath">/home/loanteam/TESTSETUP/CLARO_BRAZIL/Eligibility/EVM/log/BitstatLogs</Property>
+           <Property name="minimumNumberOfDaysForKeepingLogs">3d</Property>
+    </Properties>
+
+    <appenders>
+        <RollingFile name="rootappender"
+        fileName="${EvmLoggingPath}/evm.log"
+        filePattern="${EvmLoggingPath}//evm-%d{MM-dd-yy-HH}-%i.log.gz">
+        <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p %c{1}:%L - %m%n"/>
+        <Policies>
+            <TimeBasedTriggeringPolicy interval="1"
+                    modulate="true" />
+            <SizeBasedTriggeringPolicy size="2GB"/>
+        </Policies>
+        <DefaultRolloverStrategy>
+          <Delete basePath="${EvmLoggingPath}" maxDepth="1">
+            <IfFileName glob="evm-*.gz" />
+            <IfLastModified age="${minimumNumberOfDaysForKeepingLogs}" />
+          </Delete>
+        </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="EDRappender"
+        fileName="${EDRLoggingPath}/EdrDB.txt"
+        filePattern="${EDRLoggingPath}//EdrDB.txt-%d{MM-dd-yy-HH-mm}">
+        <Policies>
+            <TimeBasedTriggeringPolicy interval="1"
+                    modulate="true" />
+            <SizeBasedTriggeringPolicy size="2GB"/>
+        </Policies>
+        </RollingFile>
+
+        <RollingFile name="BitStatAppender"
+        fileName="${BitstatLoggingPath}/BitStatDB.txt"
+        filePattern="${BitstatLoggingPath}//BitStatDB.txt-%d{MM-dd-yy-HH-mm}">
+          <PatternLayout>
+                <header>Hora,URFRE000001,URARE000202,URARE000302,URARE000310,URBRE000001,URBRE000202,URBRE000302,URBRE000310,URCRE000001,URCRE000202,URCRE000302,URCRE000310,WRARE000001,WRARE000202,WRARE000302,WRARE000310,WRBRE000001,WRBRE000202,WRBRE000302,WRBRE000310,WRCRE000001,WRCRE000202,WRCRE000302,WRCRE000310,SRARE000001,SRARE000202,SRARE000302,SRARE000310,SRBRE000001,SRBRE000202,SRBRE000302,SRBRE000310,SRCRE000001,SRCRE000202,SRCRE000302,SRCRE000310,RRARE000001,RRARE000202,RRARE000302,RRARE000310,RRBRE000001,RRBRE000202,RRBRE000302,RRBRE000310,RRCRE000001,RRCRE000202,RRCRE000302,RRCRE000310 ${sys:line.separator}</header>
+            </PatternLayout>
+        
+        <Policies>
+            <TimeBasedTriggeringPolicy interval="180"
+                    modulate="true" />
+            <SizeBasedTriggeringPolicy size="2GB"/>
+        </Policies>
+        </RollingFile>
+
+    </appenders>
+
+
+    <Loggers>
+        <Root level="ALL">
+            <AppenderRef ref="rootappender" />
+        </Root>
+        <Logger name="EDRLogger" level="fatal" additivity="true"
+            includeLocation="true">
+            <AppenderRef ref="EDRappender" />
+        </Logger>
+        <Logger name="BitStatLogger" level="fatal" additivity="true"
+            includeLocation="true">
+            <AppenderRef ref="BitStatAppender" />
+        </Logger>
+    </Loggers>
+
+</configuration>

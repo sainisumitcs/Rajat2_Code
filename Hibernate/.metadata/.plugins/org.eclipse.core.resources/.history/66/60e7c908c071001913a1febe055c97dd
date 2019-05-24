@@ -1,0 +1,5 @@
+package com.nuance.hibernateutil;
+
+public class HibernateUtil {
+
+}

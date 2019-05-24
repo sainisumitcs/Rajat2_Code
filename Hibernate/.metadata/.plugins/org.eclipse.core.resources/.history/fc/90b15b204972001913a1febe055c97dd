@@ -1,0 +1,57 @@
+import java.util.Date;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import beans.User;
+import hibernateutil.HibernateUtil;
+
+public class ClassMain {
+	
+	public static void main(String[] args) {
+		
+		final 	Logger logger=LogManager.getLogger(HibernateUtil.class);	
+		
+		User user=new User();
+		user.setUserID(1.0);
+		user.setBirthDate(new Date());
+		user.setCity("Nodia");
+		user.setCreatedBy("Rajat");
+		user.setCreatedDate(new Date());
+		user.setEmailAddress("@mohan");
+		user.setFirstName("rajat");
+		user.setLastName("singh");
+		user.setState("UP");
+		user.setUserAddress2("add2");
+		user.setUserAddress1("add1");
+		user.setLastUpdatedBY("rajat");
+		user.setLastUpdatedDate(new Date());
+		user.setZipCode("12345");
+		
+		
+	SessionFactory sessionFactory=	HibernateUtil.getSessionFactory();
+	Session session =sessionFactory.openSession();
+	session.getTransaction().begin();
+	
+	session.save(user);
+	
+	session.getTransaction().commit();
+	session.close();
+	
+	
+	
+		
+		
+		
+			
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="ALL" monitorInterval="30">
+
+    <Properties>
+           <Property name="EvmLoggingPath">/home/loanteam/TESTSETUP/CLARO_BRAZIL/Eligibility/EVM/log</Property>
+          
+    </Properties>
+
+    <appenders>
+        <RollingFile name="rootappender"
+        fileName="${EvmLoggingPath}/evm.log"
+        filePattern="${EvmLoggingPath}//evm-%d{MM-dd-yy-HH}-%i.log.gz">
+        <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p %c{1}:%L - %m%n"/>
+        <Policies>
+            <TimeBasedTriggeringPolicy interval="1"
+                    modulate="true" />
+            <SizeBasedTriggeringPolicy size="2GB"/>
+        </Policies>
+       
+        </RollingFile>
+        
+         <Console name="STDOUT" target="SYSTEM_OUT">
+      <PatternLayout pattern="%m%n"/>
+    </Console>
+
+      
+    </appenders>
+
+
+    <Loggers>
+        <Root level="ALL">
+            <AppenderRef ref="STDOUT" />
+        </Root>
+        
+    </Loggers>
+
+</configuration>

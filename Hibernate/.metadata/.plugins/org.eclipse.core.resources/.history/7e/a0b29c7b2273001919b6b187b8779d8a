@@ -1,0 +1,121 @@
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import beans.Address;
+import beans.Bank;
+import beans.User;
+import hibernateutil.HibernateUtil;
+
+public class ClassMain {
+	
+	public static void main(String[] args) {
+		
+		final 	Logger logger=LogManager.getLogger(HibernateUtil.class);	
+		
+		
+	
+	// This section will be use for User Table test	
+	SessionFactory sessionFactory=	HibernateUtil.getSessionFactory();
+	Session session =sessionFactory.openSession();
+	session.getTransaction().begin();
+	
+	session.save(createUserRecord());
+	
+	session.getTransaction().commit();
+	session.close();
+		
+		
+	/*	// This section will be use for Bank Table test	(@Embaded Testing )
+		SessionFactory sessionFactory=	HibernateUtil.getSessionFactory();
+		Session session =sessionFactory.openSession();
+		session.getTransaction().begin();
+		
+		
+	//	session.save(createBankRecord());
+		
+		Bank bank =session.get(Bank.class, 5L);
+		
+		System.out.println(bank.toString());
+		
+		session.getTransaction().commit();
+		session.close();
+	*/
+		
+		
+		
+		
+		
+			
+		
+		
+		
+		
+		
+		
+	}
+	
+	public static Address createUserRecord()
+	{
+		
+		int count=5;
+		Address address=new Address();
+		User user=new User();
+		user.setUserID(count++);
+		user.setBirthDate(new Date());
+		address.setCity("Nodia");
+		user.setCreatedBy("Rajat");
+		user.setCreatedDate(new Date());
+		user.setEmailAddress("@mohan");
+		user.setFirstName("rajat");
+		user.setLastName("singh");
+		address.setState("UP");
+		address.setUserAddress2("add2");
+		address.setUserAddress1("add1");
+		user.setLastUpdatedBY("rajat");
+		user.setLastUpdatedDate(new Date());
+		address.setZipCode("12345");
+		address.setUser(user);
+		
+		return address;
+		
+		
+	}
+
+	/*public static Bank createBankRecord()
+	{
+		Bank bank =new Bank();
+		
+		Address address=new Address();
+		address.setZipCode("12345");
+		address.setCity("Nodia");
+		address.setState("UP");         
+		address.setUserAddress2("add2");
+		address.setUserAddress1("add1");
+		address.setAddressType(null);
+	
+		
+		
+	
+		bank.setBANK_ID(5L);
+		bank.setNAME("rajat");
+		bank.setCREATED_BY("Rajat");
+		bank.setCREATED_DATE(new Date());
+		bank.setIS_INTERNATIONAL(true);
+		bank.setLAST_UPDATED_BY("rajat");
+		bank.setLAST_UPDATED_DATE(new Date());
+		
+		
+		bank.setAddress(address);
+	
+		return bank;
+		
+		
+		
+	}*/
+}

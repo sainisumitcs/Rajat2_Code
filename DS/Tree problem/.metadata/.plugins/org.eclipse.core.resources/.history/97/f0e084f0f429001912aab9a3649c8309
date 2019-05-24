@@ -1,0 +1,86 @@
+package height;
+
+import java.util.LinkedList;
+
+public class Treehight {
+	static int a;
+	static int b;
+	static  int c;
+	
+	
+
+	public static int height(node  tree) {
+		
+	
+		if(tree==null)
+		{
+			return 0;
+		}
+		if(tree.getLeft()==null && tree.getRight()==null)
+		{
+			return 0;
+		}
+		
+		System.out.println("data ="+tree.getData());
+		
+		
+		b=1+height(tree.getRight());
+		c=a>=b ?a: b;
+		
+		System.out.println("height ="+c);
+		return a;
+		
+		
+		
+		
+		
+		
+
+	}
+
+	public static void main(String[] args) {
+
+		LinkedList<node> tree = new LinkedList<node>();
+
+		node rootnode = new node();
+       
+		node node1 = new node();
+		node1.setData(1);
+		node node2 = new node();
+		node2.setData(2);
+		 rootnode.setData(0);
+	     rootnode.setLeft(node1);
+	     rootnode.setRight(node2);
+		node node3 = new node();
+		node3.setData(3);
+		node node4 = new node();
+		node4.setData(4);
+		
+		node node5 = new node();
+		node5.setData(5);
+		
+		node1.setLeft(node4);
+        node1.setRight(node5);
+		node node6 = new node();
+		node6.setData(6);
+		
+	    
+		node node7 = new node();
+		node7.setData(7);
+		node2.setLeft(node6);
+		node2.setRight(node7);
+		node node8 = new node();
+		node8.setData(8);
+		node node9 = new node();
+		node9.setData(9);
+		node3.setLeft(node8);
+        node4.setRight(node9);		
+
+		tree.add(rootnode);
+	
+		height(rootnode);
+		
+
+	}
+
+}

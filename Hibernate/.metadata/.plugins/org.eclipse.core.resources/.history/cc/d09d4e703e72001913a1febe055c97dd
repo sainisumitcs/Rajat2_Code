@@ -1,0 +1,42 @@
+package hibernateutil;
+
+
+
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.*;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.nuance.entity.User;
+
+public class HibernateUtil {
+	
+	Logger logger=LogManager.getLogger(HibernateUtil.class);
+	
+	SessionFactory  sessionFactory=getSessionFactory();
+
+	private SessionFactory getSessionFactory() {
+	
+		try {
+			
+			Configuration configuration=new Configuration();
+		   	//configuration.addAnnotatedClass(User.class);
+			sessionFactory=	configuration.buildSessionFactory();
+			
+			
+			
+		} catch (Exception e) {
+			
+			throw new RuntimeException("Session factory fail to create ");
+		}
+		
+		return null;
+	}
+	
+	
+	
+	
+
+}

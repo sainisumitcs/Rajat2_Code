@@ -1,0 +1,35 @@
+
+
+#include <stdio.h>
+
+int main()
+{
+   float b[]={50,60,70,20,10,30};
+   float *c[]={b+3,b+4,b,b+2,b+1,b+5};
+   char a1[]="gate2010";
+    char *b2="string";
+     
+   int lrn=sizeof(b2);
+   printf("%d\n",lrn);
+   
+   printf("%s\n",a1);
+   
+   float **a=c;
+   
+   printf("%f\n",b);
+   
+   **++a;
+    printf("f1=%df2=%df3=%f\n", a-c,*a-b,**a);
+      *++*a;
+      
+    printf("f1=%df2=%df3=%f\n", a-c,*a-b,**a);
+    
+    ++**a;
+    
+    printf("f1=%df2=%df3=%f\n", a-c,*a-b,**a);
+    
+   
+   
+
+    return 0;
+}

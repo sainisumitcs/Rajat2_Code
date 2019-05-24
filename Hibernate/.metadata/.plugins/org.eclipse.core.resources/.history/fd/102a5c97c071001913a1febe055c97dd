@@ -1,0 +1,28 @@
+package com.nuance;
+
+import org.hibernate.SessionFactory;
+
+import com.nuance.entity.User;
+import com.nuance.hibernateutil.HibernateUtil;
+
+public class mainclass {
+	
+	
+	public static void main(String[] args) {
+		
+	SessionFactory sessionFactory	=HibernateUtil.getSessionFactory();
+	
+	User user=new User();
+	
+	user.setId(12345);
+	user.setLocation("NOIDA-132");
+	user.setName("kalu");
+	user.setPhone("834873e");
+	
+		
+		
+		
+		
+	}
+
+}

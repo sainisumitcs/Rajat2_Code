@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration SYSTEM "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN">
+
+<hibernate-configuration>
+
+<session-factory>
+
+
+
+<mapping class="hibernate.test.dto.foreignKeyAsso.EmployeeEntity"/>
+
+
+
+</session-factory>
+
+</hibernate-configuration>

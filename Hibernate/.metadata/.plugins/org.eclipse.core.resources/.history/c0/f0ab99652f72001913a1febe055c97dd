@@ -1,0 +1,4 @@
+hibernate.connection.username=root
+hibernate.connection.password=root
+hibernate.connection.username=
+hibernate.connection.username=root

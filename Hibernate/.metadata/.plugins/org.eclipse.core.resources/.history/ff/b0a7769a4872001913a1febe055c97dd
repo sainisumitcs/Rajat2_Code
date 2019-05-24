@@ -1,0 +1,178 @@
+package beans;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.CollectionId;
+import org.hibernate.annotations.Type;
+	
+
+
+@Entity
+@Table(name="finances_user")
+public class User {
+
+	
+
+	@CollectionId(columns=@Column(name="USER_ID" ), type = @Type(type = "Long"), generator = "identity")
+	private Long userID;
+
+	
+	@Column(name="FIRST_NAME")
+	private String firstName;
+
+	@Column(name="LAST_NAME")
+	private String lastName;
+
+	@Column(name="BIRTH_DATE")
+	private Date birthDate;
+
+	@Column(name="EMAIL_ADDRESS")
+	private String emailAddress;
+
+	@Column(name="LAST_UPDATED_BY")
+	private String lastUpdatedBY;
+ 
+	@Column(name="LAST_UPDATED_DATE")
+	private Date lastUpdatedDate;
+
+	@Column(name="CREATED_DATE")
+	private Date createdDate;
+
+	@Column(name="CREATED_BY")
+	private String createdBy;
+
+	@Column(name="USER_ADDRESS_LINE_1")
+	private String userAddress1;
+
+	@Column(name="USER_ADDRESS_LINE_2")
+	private String userAddress2;
+
+	@Column(name="CITY")
+	private String city;
+
+	@Column(name="STATE")
+	private String state;
+
+	@Column(name="ZIP_CODE")
+	private String zipCode;
+
+	public Long getUserID() {
+		return userID;
+	}
+
+	public void setUserID(Long userID) {
+		this.userID = userID;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public Date getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public String getLastUpdatedBY() {
+		return lastUpdatedBY;
+	}
+
+	public void setLastUpdatedBY(String lastUpdatedBY) {
+		this.lastUpdatedBY = lastUpdatedBY;
+	}
+
+	public Date getLastUpdatedDate() {
+		return lastUpdatedDate;
+	}
+
+	public void setLastUpdatedDate(Date lastUpdatedDate) {
+		this.lastUpdatedDate = lastUpdatedDate;
+	}
+
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+
+	public String getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public String getUserAddress1() {
+		return userAddress1;
+	}
+
+	public void setUserAddress1(String userAddress1) {
+		this.userAddress1 = userAddress1;
+	}
+
+	public String getUserAddress2() {
+		return userAddress2;
+	}
+
+	public void setUserAddress2(String userAddress2) {
+		this.userAddress2 = userAddress2;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getZipCode() {
+		return zipCode;
+	}
+
+	public void setZipCode(String zipCode) {
+		this.zipCode = zipCode;
+	}
+
+}

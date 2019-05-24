@@ -1,0 +1,52 @@
+package hibernateutil;
+
+
+
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.*;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import beans.Address;
+import beans.Bank;
+import beans.User;
+
+
+
+public class HibernateUtil {
+	
+final static 	Logger logger=LogManager.getLogger(HibernateUtil.class);
+	
+private  static	SessionFactory  sessionFactory=getSessionFactory();
+
+	public static SessionFactory getSessionFactory() {
+	
+		try {
+			
+			Configuration configuration=new Configuration().configure("hibernate.cfg.xml");
+		   		configuration.addAnnotatedClass(User.class).buildMappings();
+		   		//configuration.addAnnotatedClass(Bank.class);
+		   		configuration.addAnnotatedClass(Address.class);
+		  
+		   		
+			sessionFactory=	configuration.buildSessionFactory();
+			
+			
+			
+			
+		} catch (Exception e) {
+			
+			logger.error("Exception while preparing session Factory ",e);
+			throw new RuntimeException("Session factory fail to create ");
+		}
+		
+		return sessionFactory;
+	}
+	
+	
+	
+	
+
+}

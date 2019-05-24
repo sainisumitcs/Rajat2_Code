@@ -1,0 +1,25 @@
+package beans;
+
+import javax.persistence.Column;
+
+public class Address {
+	
+	
+	
+	@Column(name="USER_ADDRESS_LINE_1")
+	private String userAddress1;
+
+	@Column(name="USER_ADDRESS_LINE_2")
+	private String userAddress2;
+
+	@Column(name="CITY")
+	private String city;
+
+	@Column(name="STATE")
+	private String state;
+
+	@Column(name="ZIP_CODE")
+	private String zipCode;
+
+
+}

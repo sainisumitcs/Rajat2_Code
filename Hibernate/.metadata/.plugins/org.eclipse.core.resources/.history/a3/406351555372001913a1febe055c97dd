@@ -1,0 +1,82 @@
+import java.util.Date;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import beans.Address;
+import beans.User;
+import hibernateutil.HibernateUtil;
+
+public class ClassMain {
+	
+	public static void main(String[] args) {
+		
+		final 	Logger logger=LogManager.getLogger(HibernateUtil.class);	
+		
+		
+/*	
+	// This section will be use for User Table test	
+	SessionFactory sessionFactory=	HibernateUtil.getSessionFactory();
+	Session session =sessionFactory.openSession();
+	session.getTransaction().begin();
+	
+	//session.save(user);
+	
+	session.getTransaction().commit();
+	session.close();*/
+		
+		
+		// This section will be use for Bank Table test	(@Embaded Testing )
+		SessionFactory sessionFactory=	HibernateUtil.getSessionFactory();
+		Session session =sessionFactory.openSession();
+		session.getTransaction().begin();
+		
+		//session.save(user);
+		
+		session.getTransaction().commit();
+		session.close();*/
+	
+		
+		
+	
+	
+		
+		
+		
+			
+		
+		
+		
+		
+		
+		
+	}
+	
+	public User createUserRecord()
+	{
+		Address address=new Address();
+		User user=new User();
+		user.setUserID(2);
+		user.setBirthDate(new Date());
+		address.setCity("Nodia");
+		user.setCreatedBy("Rajat");
+		user.setCreatedDate(new Date());
+		user.setEmailAddress("@mohan");
+		user.setFirstName("rajat");
+		user.setLastName("singh");
+		address.setState("UP");
+		address.setUserAddress2("add2");
+		address.setUserAddress1("add1");
+		user.setLastUpdatedBY("rajat");
+		user.setLastUpdatedDate(new Date());
+		address.setZipCode("12345");
+		user.setAddress(address);
+		
+		return user;
+		
+		
+	}
+
+}

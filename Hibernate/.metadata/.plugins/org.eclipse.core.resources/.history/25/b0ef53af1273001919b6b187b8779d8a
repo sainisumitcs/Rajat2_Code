@@ -1,0 +1,140 @@
+package beans;
+
+import java.util.Date;
+
+import javax.persistence.Access;
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.AccessType;
+import org.hibernate.annotations.CollectionId;
+import org.hibernate.annotations.GeneratorType;
+import org.hibernate.annotations.Type;
+
+@Entity
+@Table(name = "finances_user")
+public class User {
+
+	@Id
+	@Column(name = "USER_ID")
+	// @GeneratedValue(strategy=GenerationType.AUTO)
+	private int userID;
+
+	@Column(name = "FIRST_NAME")
+	private String firstName;
+
+	@Column(name = "LAST_NAME")
+	private String lastName;
+
+	@Column(name = "BIRTH_DATE")
+	private Date birthDate;
+
+	@Column(name = "EMAIL_ADDRESS")
+	private String emailAddress;
+
+	@Column(name = "LAST_UPDATED_BY")
+	private String lastUpdatedBY;
+
+	@Column(name = "LAST_UPDATED_DATE")
+	private Date lastUpdatedDate;
+
+	@Column(name = "CREATED_DATE")
+	private Date createdDate;
+
+	@Column(name = "CREATED_BY")
+	private String createdBy;
+
+	/*
+	 * @AttributeOverrides({@AttributeOverride(name="ADDRESS_LINE_1"
+	 * ,column=@Column(name="USER_ADDRESS_LINE_1"))
+	 * ,@AttributeOverride(name="ADDRESS_LINE_2"
+	 * ,column=@Column(name="USER_ADDRESS_LINE_2"))}) private Address
+	 * address=new Address();
+	 * 
+	 * 
+	 * 
+	 * public Address getAddress() { return address; }
+	 * 
+	 * public void setAddress(Address address) { this.address = address; }
+	 */
+	public int getUserID() {
+		return userID;
+	}
+
+	public void setUserID(int i) {
+		this.userID = i;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public Date getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public String getLastUpdatedBY() {
+		return lastUpdatedBY;
+	}
+
+	public void setLastUpdatedBY(String lastUpdatedBY) {
+		this.lastUpdatedBY = lastUpdatedBY;
+	}
+
+	public Date getLastUpdatedDate() {
+		return lastUpdatedDate;
+	}
+
+	public void setLastUpdatedDate(Date lastUpdatedDate) {
+		this.lastUpdatedDate = lastUpdatedDate;
+	}
+
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+
+	public String getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+
+}

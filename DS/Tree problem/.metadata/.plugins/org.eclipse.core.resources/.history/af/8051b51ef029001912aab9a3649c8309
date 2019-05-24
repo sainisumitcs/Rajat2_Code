@@ -1,0 +1,24 @@
+package height;
+
+private  class node {
+
+	private int data;
+	private node next;
+
+	private  int getData() {
+		return data;
+	}
+
+	private  void setData(int data) {
+		this.data = data;
+	}
+
+	private  node getNext() {
+		return next;
+	}
+
+	private  void setNext(node next) {
+		this.next = next;
+	}
+
+}

@@ -1,0 +1,13 @@
+package hibernateutil;
+
+import org.hibernate.SessionFactory;
+
+public class HibernateUtil {
+	
+	SessionFactory  sessionFactory=getSessionFactory();
+	
+	
+	
+	
+
+}

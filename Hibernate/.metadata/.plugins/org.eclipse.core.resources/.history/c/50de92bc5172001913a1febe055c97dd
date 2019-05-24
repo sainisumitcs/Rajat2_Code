@@ -1,0 +1,26 @@
+package beans;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Bank {
+	
+	private Long BANK_ID;
+	
+	private Long BANK_ID;
+	private String NAME;
+	private String ADDRESS_LINE_1;
+	private String ADDRESS_LINE_2;
+	private Date CREATED_DATE;
+	private String CREATED_BY;
+	private String LAST_UPDATED_BY;
+	private Date LAST_UPDATED_DATE;
+	private boolean  IS_INTERNATIONAL;
+	
+	
+	
+	
+	
+	
+
+}
